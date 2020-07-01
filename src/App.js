@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Cameras, Scanner } from "./components/react-instascan";
+// import { Cameras, Scanner } from "./components/react-instascan";
+import { Cameras, Scanner } from "react-instascan-new";
 
 class App extends Component {
 
