@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-// import { Cameras, Scanner } from "./components/react-instascan";
 import { Cameras, Scanner } from "react-instascan-new";
+// import { Cameras, Scanner } from "./components/react-instascan/src";
 
 class App extends Component {
 
@@ -30,20 +30,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header2">
           <p>QR Code: {this.state.code}</p>
-          <button onClick={() => this.setState({code: "AAAAAAAAAAA"})}>Teste</button>
-
-          {/* <div className="preview-container">
-            <video id="preview" ref={this.video}></video>
-          </div> */}
-
-          {/* <video className="preview-container" style={{ width: 400, height: 400 }} /> */}
-
           <Cameras>
             {cameras => (
               <div>
-                <button onClick={() => this.setState({code: cameras.length})}>Teste</button>
-                <Scanner camera={cameras[0]} onScan={this.onScan}>
-                  <video style={{ width: 400, height: 400 }} />
+                <Scanner camera={cameras[cameras.length - 1]} onScan={this.onScan} options={{mirror: false}}>
+                  <video style={{ width: "80%" }}></video>
                 </Scanner>
               </div>
             )}
