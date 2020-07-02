@@ -7,11 +7,10 @@
     "@zxing/library": "^0.17.0",
     "core-js": "^3.6.5",
     "fsm-as-promised": "^0.16.0",
-    "instascan-new": "^1.0.0",
     "instascan-umd-new": "^1.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-instascan-new": "^1.0.0",
+    "react-instascan-new": "^1.2.6",
     "react-scripts": "3.4.1",
     "visibilityjs": "^2.0.2",
     "webrtc-adapter": "^7.6.3"
